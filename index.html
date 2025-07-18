@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,26 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SciSims 3D Lab</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="neon-glow">
-    <img src="assets/logo.png" alt="SciSims Logo" class="logo" />
-    <h1>SciSims 3D: Virtual Science Adventure</h1>
+  <header>
+    <h1>🧪 SciSims Virtual Lab 3D</h1>
+    <p>Walk around and explore your science lab!</p>
   </header>
-  <main>
-    <section class="intro card-3d">
-      <h2>Welcome, Young Explorers!</h2>
-      <p>Step into a 3D science lab and experience the magic of learning by doing!</p>
-      <button id="startBtn" class="button-3d">Launch 3D Lab 🚀</button>
-    </section>
-    <section class="lab card-3d" id="labSection">
-      <iframe id="labIframe" src="https://cospaces.io/YourLabLinkHere" width="100%" height="500px" allowfullscreen></iframe>
-    </section>
-  </main>
-  <footer class="neon-glow">
-    <p>&copy; 2025 SciSims Lab. Explore the 3D world of science! 🔍🧪</p>
-  </footer>
+  <canvas id="labCanvas"></canvas>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
